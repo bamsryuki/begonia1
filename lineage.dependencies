@@ -1,18 +1,38 @@
 [
   {
-    "repository" : "android_kernel_xiaomi_mt6785",
+    "remote"     : "github",
+    "repository" : "bamsryuki/begonia1",
+    "target_path": "device/redmi/begonia",
+    "branch"     : "12.1"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "bamsryuki/begonia4",
+    "target_path": "device/mediatek/sepolicy",
+    "branch"     : "12.1"
+  },
+  {
+    "remote"     : "github",
+    "repository" : "bamsryuki/begonia2",
     "target_path": "kernel/xiaomi/mt6785",
+    "branch"     : "12.1"
   },
   {
-    "repository" : "vendor_redmi_begonia",
-    "target_path": "vendor/redmi/begonia"
+    "remote"     : "github",
+    "repository" : "bamsryuki/begonia3",
+    "target_path": "vendor/redmi/begonia",
+    "branch"     : "12.1"
   },
   {
-    "repository" : "vendor_redmi_begonia-ims",
-    "target_path": "vendor/redmi/begonia-ims"
+    "remote"     : "github",
+    "repository" : "bamsryuki/begonia6",
+    "target_path": "vendor/redmi/begonia-ims",
+    "branch"     : "12.0"
   },
   {
-    "repository" : "android_packages_apps_MtkFMRadio",
-    "target_path": "packages/apps/MtkFMRadio",
-  }
+   "repository": "Mediatek-OSS/android_packages_apps_MtkFMRadio",
+   "target_path": "packages/apps/MtkFMRadio",
+   "branch": "lineage-18.1",   
+   "remote": "github"
+ }
 ]
