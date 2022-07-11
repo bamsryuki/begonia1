@@ -23,6 +23,8 @@ TARGET_DOESNT_LIKE_FLIPENDO := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
+$(call inherit-product, vendor/ANXCamera/config.mk)
+$(call inherit-product, vendor/dirac/config.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -39,10 +41,15 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "Redmi/begonia/begonia:11/RP1A.200720.011/V12.5.5.0.RGGMIXM:user/release-keys"
+# additional
+WITH_GAPPS := false
+TARGET_ENABLE_BLUR := true
+RICE_MAINTAINER := Bambang Firdaus ZR.
+
+BUILD_FINGERPRINT := "google/raven/raven:12/SQ3A.220705.003.A1/8672226:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="begonia-user 11 RP1A.200720.011 V12.5.5.0.RGGMIXM release-keys" \
+    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.003.A1 8672226 release-keys" \
     PRODUCT_NAME="begonia" \
     TARGET_DEVICE="begonia"
 
